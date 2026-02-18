@@ -18,8 +18,8 @@ document.addEventListener('click', (e) => {
 
   const minX = 0;
   const minY = 0;
-  const maxX = wall.offsetWidth - spiderWidth;
-  const maxY = wall.offsetHeight - spiderHeight;
+  const maxX = wall.clientWidth - spiderWidth;
+  const maxY = wall.clientHeight - spiderHeight;
 
   x = Math.max(minX, Math.min(x, maxX));
   y = Math.max(minY, Math.min(y, maxY));
